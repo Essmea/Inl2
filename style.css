@@ -1,0 +1,268 @@
+@import url(animation.css);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(221, 221, 221);
+    font-family: 'Roboto', sans-serif;
+}
+.wrap{
+    position: relative;
+    min-width: 50%;
+    display: grid;
+    grid-template-columns: 35% auto;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    background-color: white;
+}
+
+/*Left side*/
+.left {
+    background-color: rgb(255, 242, 238);
+}
+
+.description {
+    margin-top: 1.5rem;
+    margin-left:1.5rem;
+    font-size:0.8rem;
+    color: grey;
+}
+
+h2 {
+    font-size: 1rem; 
+    margin-bottom: 0.5rem; 
+    color:black;
+}
+
+/*Right side*/
+.right {
+    font-size: .8rem;
+    z-index: 1;
+}
+
+.main{
+  padding: 3rem;
+  margin-top:2rem;
+  margin-left: 7rem;
+  
+}
+
+/*Button style*/
+    .submit, button  {
+    cursor: pointer;
+    border: .5px solid lightgray;
+    outline: none;
+    border-radius: 5%;
+}
+
+.google {
+    background-color: white;
+    padding-right: 3rem;
+    padding-top: .5rem;
+    padding-bottom:.5rem;
+    font-size: .7rem;
+    font-weight: 600;
+    
+}
+.fa-google {
+    padding-right: 1rem;
+    padding-left: .7rem;
+    font-size: .7rem;
+    color: rgb(26, 155, 26);
+}
+
+.fa-apple, .fa-facebook-square{
+    padding: .5rem;
+    font-size: .7rem;
+}
+.fa-facebook-square {
+    color: blue;
+}
+.check-label {
+    font-size: .6rem;
+}
+.submit {
+    display: block;
+    margin-top: 2rem;
+    padding-top: .5rem;
+    padding-bottom:.5rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    font-size: .7rem;
+    color: white;
+    background-color: rgb(255, 112, 56);
+}
+
+/*link*/
+
+a {
+    text-decoration: none;
+    color: rgb(59, 138, 241);
+}
+
+/*text*/
+h1 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: black;
+}
+
+.p-account {
+    padding-bottom: 1.7rem;
+}
+
+.p-or {
+    text-align: center;
+    padding: 1rem;
+    font-size: .6rem;
+    color:  lightgrey;
+}
+
+.p-strength {
+    color: black;
+    font-size: .7rem;
+    font-weight: 500;
+    padding-bottom: .4rem;
+}
+
+/*form*/
+
+.input {
+    display:block ;
+    border: none;
+    border-bottom: 1px solid lightgrey;
+    padding-right: 6rem;
+    margin-bottom: 1rem;
+    padding-bottom: .3rem;
+    outline: none;
+}
+
+::placeholder {
+    color:black;
+}
+
+label {
+    font-size: .7rem;
+}
+
+/*Password strength bars*/
+.bars {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 1rem;
+}
+.green {
+    background-color: rgb(62, 179, 62);
+    width: 4rem;
+    height: 3px;
+    border-radius: 1px;
+    margin-right: 3px;
+}
+
+.grey {
+    background-color: lightgrey;
+    width: 4rem;
+    height: 3px;
+    border-radius: 1px;
+    margin-right: 3px;
+}
+
+/*Fake password toggle - only for show*/
+.far {
+    z-index: 1;
+    position: absolute;
+    padding-left: 12.5rem ;
+    padding-top:1rem;
+}
+
+
+/*Dropdown menu "English(USA)"*/
+.dropdown {
+    position: relative;
+    display: block;
+    font-size: .7rem;
+    color:lightgrey;
+    float: right;
+    margin-top: 1.5rem;
+    margin-right:1.5rem;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    padding:0.5rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    color: grey;
+    background-color: white;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+
+/* Media*/
+
+@media only screen and (max-width: 1000px) {
+    
+    body {
+        position: fixed;
+       
+    }
+    .wrap {
+        
+        margin: 0%;
+        padding: 0%;
+        min-width: 100%;
+        max-width: 100%;
+        height:100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+
+   .dropdown {
+       display: none;
+    }
+    /*bottom*/
+    .right {
+        display: flex;
+        margin: 0%;
+        padding: 0%;
+    }
+    .main {
+        width: 100%;
+        margin: 0;
+    }
+    
+    /*top*/
+    .left {
+        width: 100%;
+        height: 30%;
+    }
+
+    .text{
+        display: none;
+    }
+
+    
+    .svg {
+        margin-bottom: 100%; 
+        padding:0;
+    }
+
+    /* Only displaying Circle and small squares floating around*/
+    #girlsitting, #armandsquare, #Girl {
+        display:none;
+    }
+  }

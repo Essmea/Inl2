@@ -1,0 +1,132 @@
+
+/*Everything*/
+
+
+.svg {
+    min-width: 50%;
+    padding-right: 25%;
+    box-sizing: border-box;
+    position: absolute;
+}
+
+/*Cirkle*/
+#circle {
+animation: circle 4s linear infinite;
+transform-box: fill-box;
+}
+
+@keyframes circle {
+    from { 
+        transform: rotateZ(0deg);
+
+    }
+
+    to { 
+        transform: rotateZ(360deg);
+
+    }
+}
+/*Small squares rotating around each other*/ 
+#squares {
+    animation: squares 7s linear infinite;
+    transform-box:fill-box;
+    transform-origin: center;
+}
+
+@keyframes squares {
+    from { 
+        transform: rotatez(0deg);
+    }
+  
+ 
+    to { 
+        transform: rotatez(360deg);
+    }
+}
+
+/*small squares routating around themselves*/
+#littlepinksquare, #littlesquare {
+    animation: square 4s linear infinite;
+    transform-box:fill-box;
+    transform-origin: center;
+}
+
+@keyframes square {
+    from { 
+        transform: rotatez(0deg);
+
+    }
+ 
+    to { 
+        transform: rotatez(360deg);
+    }
+}
+
+/*Girls arm lifting with middlesquare*/
+
+#armandsquare {
+    animation: arm 5s ease-in-out;
+    transform-box: fill-box;
+    animation-delay: 2s;
+    
+}
+
+@keyframes arm {
+    10% { 
+        transform: rotatez(0deg);
+        
+
+    }
+ 
+    40%, 70% { 
+        transform: rotatez(-50deg);
+        
+        
+    }
+
+    100% {
+        transform: rotate(0deg);
+        
+    }
+}
+/*middlesquare spinning */
+#middlesquare {
+    animation: middlesquare 5s;
+    transform-box:fill-box;
+    transform-origin: left;
+    animation-delay: 2s;
+    
+}
+
+@keyframes middlesquare {
+    
+    
+    0%, 30% { 
+        transform: rotatez(0deg);
+
+    }
+
+ 
+    70%, 100% { 
+        transform: rotatez(360deg);
+    }
+
+    
+}
+
+/*girl sitting on square - up and down animation*/
+#girlsitting {
+    animation: girlsitting 4s ease-in-out ;
+    transform-origin: bottom;
+}
+
+@keyframes girlsitting {
+    from {
+        transform: translatey(-20%) ;
+    }
+     
+
+   to {
+        transform: translateY(0%);
+    }
+}
